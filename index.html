@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth scroll-pt-24">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>TecNova agência</title>
+    <meta name="description" content="A TecNova cria sites modernos, rápidos e estratégicos para negócios que querem vender mais no digital." />
+    <!-- Replaced icon with something else if needed, keeping empty for now or generic -->
+    <link rel="icon" href="https://i.ibb.co/xtnsfcw6/Image-3.png" type="image/png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                dark: '#050505', 
+                darker: '#000000',
+                blue: '#050505', // Keeping this variable for backward compatibility across the app temporarily, but it's black now
+                accent: '#E60000', // Deep intense red
+                accentDark: '#990000',
+                green: '#2ECC71',
+                gray: '#A1A1AA',
+                text: '#FFFFFF', // Set text to white
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              heading: ['Space Grotesk', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body.quiz-open .custom-cursor {
+        display: none !important;
+      }
+      .no-custom-cursor {
+         cursor: default !important;
+      }
+      a, button {
+         cursor: pointer;
+      }
+      ::selection {
+        background: #E60000;
+        color: white;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/client": "https://esm.sh/react-dom@^19.2.4/client",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-brand-dark text-brand-text antialiased">
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
